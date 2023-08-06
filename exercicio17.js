@@ -1,0 +1,13 @@
+const numero1 = parseInt(prompt("Digite o primeiro número inteiro:"));
+const numero2 = parseInt(prompt("Digite o segundo número inteiro:"));
+
+const menorNumero = Math.min(numero1, numero2);
+const maiorNumero = Math.max(numero1, numero2);
+
+console.log("Números pares entre " + menorNumero + " e " + maiorNumero + ":");
+
+for (let i = menorNumero; i <= maiorNumero; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
